@@ -40,3 +40,56 @@
 .read-the-docs {
   color: #888;
 }
+
+/* Prompt app styles */
+.tab {
+  padding: 8px 12px;
+  border: 1px solid transparent;
+  background: #f4f6fb;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.tab.active {
+  background: linear-gradient(90deg,#6c5ce7,#7b61ff);
+  color: white;
+  border-color: rgba(0,0,0,0.06);
+}
+.search {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #e6e9f2;
+  width: 320px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+}
+.prompt-card {
+  border: 1px solid #eef2ff;
+  border-radius: 12px;
+  overflow: hidden;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 6px 18px rgba(17,12,46,0.04);
+}
+.prompt-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+.prompt-card .body {
+  padding: 12px;
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+}
+.prompt-card h3 { margin:0; font-size:1rem }
+.prompt-card p { margin:0; color:#444; font-size:0.92rem }
+.prompt-card .controls { display:flex; gap:8px; margin-top:8px }
+.btn {
+  padding:8px 10px; border-radius:8px; border:1px solid #e6e9f2; background:#fbfbff; cursor:pointer;
+}
+.btn.primary { background: #5850ff; color:white; border-color: transparent }
+
