@@ -1,12 +1,3 @@
-import g1 from '../assets/g1.svg'
-import g2 from '../assets/g2.svg'
-import g3 from '../assets/g3.svg'
-import g4 from '../assets/g4.svg'
-import c1 from '../assets/c1.svg'
-import c2 from '../assets/c2.svg'
-import c3 from '../assets/c3.svg'
-import c4 from '../assets/c4.svg'
-
 export type Prompt = {
   id: string
   title: string
@@ -17,54 +8,54 @@ export type Prompt = {
 const gemini: Prompt[] = [
   {
     id: 'g-1',
-    title: 'Cinematic golden hour portrait',
-    prompt: 'A cinematic golden hour portrait of a woman on a hill, warm backlight, shallow depth of field, 85mm, film grain, dramatic contrast.',
-    image: g1
+    title: 'Remove background from portrait',
+    prompt: 'Remove the background from this portrait photo and make it transparent. Keep the subject sharp and natural.',
+    image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop'
   },
   {
     id: 'g-2',
-    title: 'Futuristic neon cityscape',
-    prompt: 'Ultra-detailed futuristic neon cityscape at night, rain reflections, volumetric lighting, cinematic, wide-angle, high dynamic range.',
-    image: g2
+    title: 'Enhance colors and contrast',
+    prompt: 'Enhance the colors, increase contrast, and brighten this photo while maintaining natural skin tones.',
+    image: 'https://images.unsplash.com/photo-1542038784456-1ea8e935640e?w=400&h=300&fit=crop'
   },
   {
     id: 'g-3',
-    title: 'Macro dew on spiderweb',
-    prompt: 'Macro photograph of dew on a spiderweb at dawn, extreme detail, soft bokeh background, 100mm macro.',
-    image: g3
+    title: 'Remove unwanted objects',
+    prompt: 'Remove the distracting objects in the background and fill the space naturally with appropriate content.',
+    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop'
   },
   {
     id: 'g-4',
-    title: 'Aerial autumn forest',
-    prompt: 'Aerial drone shot of an autumn forest with a meandering river, vibrant colors, high resolution, crisp details.',
-    image: g4
+    title: 'Convert to black and white',
+    prompt: 'Convert this color photo to a high-quality black and white image with good contrast and tonal range.',
+    image: 'https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=400&h=300&fit=crop'
   }
 ]
 
 const chatgpt: Prompt[] = [
   {
     id: 'c-1',
-    title: 'Recipe for spicy tomato pasta',
-    prompt: 'Write a concise, step-by-step recipe for a spicy tomato pasta using pantry ingredients, include cook times and serving suggestions.',
-    image: c1
+    title: 'Change background to beach',
+    prompt: 'Change the background of this person to a beautiful tropical beach with palm trees and ocean waves.',
+    image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop'
   },
   {
     id: 'c-2',
-    title: 'Blog outline: Minimalist travel tips',
-    prompt: 'Create a 7-section blog outline about minimalist travel with headings, short descriptions, and a suggested title.',
-    image: c2
+    title: 'Add dramatic lighting',
+    prompt: 'Add dramatic cinematic lighting to this photo, with golden hour sunlight and long shadows.',
+    image: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&h=300&fit=crop'
   },
   {
     id: 'c-3',
-    title: 'Cold email to a product manager',
-    prompt: 'Draft a polite cold email to a product manager introducing a new analytics tool, include value props and a one-line CTA.',
-    image: c3
+    title: 'Replace object with something else',
+    prompt: 'Replace the car in this photo with a vintage red sports car, keeping the same lighting and perspective.',
+    image: 'https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=400&h=300&fit=crop'
   },
   {
     id: 'c-4',
-    title: 'Prompt for product feature brainstorming',
-    prompt: 'Help me brainstorm 10 feature ideas for a mobile notes app focused on productivity and privacy.',
-    image: c4
+    title: 'Apply artistic filter',
+    prompt: 'Apply a professional photography filter that makes this image look like it was taken with a vintage film camera.',
+    image: 'https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=400&h=300&fit=crop'
   }
 ]
 
